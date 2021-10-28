@@ -2,9 +2,9 @@
   "name": "tauri-plugin-fs-extra-api",
   "version": "0.0.0",
   "author": "Tauri Programme within The Commons Conservancy",
-  "description": "",
   "browser": "webview-dist/index.js",
   "main": "webview-dist/index.js",
+  "description": "Tauri plugin that adds additional file system methods",
   "types": "webview-dist/index.d.ts",
   "scripts": {
     "build": "rollup -c ./webview-src/rollup.config.js",

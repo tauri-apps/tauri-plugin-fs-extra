@@ -2,7 +2,7 @@
 name = "tauri-plugin-fs-extra"
 version = "0.0.0"
 authors = [ "Tauri Programme within The Commons Conservancy" ]
-description = ""
+description = "Tauri plugin that adds additional file system methods"
 edition = "2018"
 exclude = ["/examples", "/webview-dist", "/webview-src", "node_modules"]
 

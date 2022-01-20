@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "author": "Tauri Programme within The Commons Conservancy",
   "description": "Tauri plugin that adds additional file system methods",
+  "license": "Apache-2.0 OR MIT",
   "browser": "webview-dist/index.min.js",
   "module": "webview-dist/index.mjs",
   "types": "webview-dist/index.d.ts",

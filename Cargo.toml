@@ -7,6 +7,6 @@ edition = "2018"
 exclude = ["/examples", "/webview-dist", "/webview-src", "node_modules"]
 
 [dependencies]
-tauri = "1.0.0-rc.3"
+tauri = "1.0.0-rc.8"
 serde = "1.0"
 thiserror = "1.0"

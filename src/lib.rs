@@ -117,7 +117,7 @@ async fn metadata(path: PathBuf) -> Result<Metadata> {
   })
 }
 
-#[tauri::command]
+#[command]
 async fn exists(path: PathBuf) -> bool {
   path.exists()
 }

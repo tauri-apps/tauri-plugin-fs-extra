@@ -42,8 +42,8 @@ use tauri_plugin_fs_extra::FsExtra;
 fn main() {
     tauri::Builder::default()
         .plugin(FsExtra::default())
-        .build()
-        .run();
+        .run(tauri::generate_context!())
+        .expect("error while running tauri application");
 }
 ```
 

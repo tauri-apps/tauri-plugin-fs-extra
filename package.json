@@ -1,37 +1,33 @@
 {
-    "name": "tauri-plugin-fs-extra-api",
-    "version": "0.0.0",
-    "description": "Tauri plugin that adds additional file system methods",
-    "license": "Apache-2.0 OR MIT",
-    "authors": [
-        "Tauri Programme within The Commons Conservancy"
-    ],
-    "type": "module",
-    "browser": "webview-dist/index.min.js",
-    "types": "webview-dist/index.d.ts",
-    "exports": {
-        ".": {
-            "import": "./webview-dist/index.mjs"
-        },
-        "./package.json": "./package.json"
-    },
-    "files": [
-        "webview-dist"
-    ],
-    "scripts": {
-        "build": "rollup -c ./webview-src/rollup.config.js",
-        "prepublishOnly": "yarn build",
-        "pretest": "yarn build"
-    },
-    "devDependencies": {
-        "@rollup/plugin-node-resolve": "13.3.0",
-        "@rollup/plugin-typescript": "8.3.2",
-        "rollup": "2.75.1",
-        "rollup-plugin-terser": "7.0.2",
-        "typescript": "4.7.2"
-    },
-    "dependencies": {
-        "@tauri-apps/api": "1.0.0",
-        "tslib": "2.4.0"
-    }
+  "name": "tauri-plugin-fs-extra-api",
+  "version": "0.0.0",
+  "description": "Additional file system methods not included in the core API.",
+  "license": "MIT or APACHE-2.0",
+  "authors": [
+    "Tauri Programme within The Commons Conservancy"
+  ],
+  "type": "module",
+  "browser": "guest-js/dist/index.min.js",
+  "module": "guest-js/dist/index.mjs",
+  "types": "guest-js/dist/index.d.ts",
+  "exports": {
+    "import": "./guest-js/dist/index.mjs",
+    "types": "./guest-js/dist/index.d.ts",
+    "browser": "./guest-js/dist/index.min.js"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "tslib": "^2.4.1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.2.0"
+  }
 }

@@ -1,12 +1,17 @@
 [package]
 name = "tauri-plugin-fs-extra"
-version = "0.0.0"
-authors = [ "Tauri Programme within The Commons Conservancy" ]
-description = "Tauri plugin that adds additional file system methods"
-edition = "2018"
-exclude = ["/examples", "/webview-dist", "/webview-src", "node_modules"]
+version = "0.1.0"
+description = "Additional file system methods not included in the core API."
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tauri = "1.0.0"
-serde = "1.0"
-thiserror = "1.0"
+serde.workspace = true
+serde_json.workspace = true
+tauri.workspace = true
+log.workspace = true
+thiserror.workspace = true
